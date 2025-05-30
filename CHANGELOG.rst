@@ -2,6 +2,55 @@
 Changelog for package ur_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.6.0 (2025-05-15)
+------------------
+* Add support for UR15 (`#288 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/288>`_)
+* Humble update distro branches (`#285 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/285>`_)
+* Update ur3e's inertia values (backport `#276 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/276>`_) (`#278 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/278>`_)
+* Add ros2_control interfaces for tool_contact (`#275 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/275>`_)
+* Contributors: Felix Exner, mergify[bot]
+
+2.5.0 (2025-04-02)
+------------------
+* Update inertia matrix for UR3e and UR5e from measurements (backport of `#256 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/256>`_) (`#274 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/274>`_)
+* Auto-update pre-commit hooks (backport `#268 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/268>`_) (`#269 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/269>`_)
+* Add support for UR7e and UR12e (backport of `#266 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/266>`_) (`#267 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/267>`_)
+* Update README.md (`#264 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/264>`_) (`#265 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/265>`_)
+* Contributors: mergify[bot]
+
+2.1.11 (2025-03-17)
+-------------------
+* Fix UR3 mesh positioning (backport of `#258 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/258>`_) (`#259 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/259>`_)
+* Auto-update pre-commit hooks (backport of `#254 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/254>`_) (`#255 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/255>`_)
+* Auto-update pre-commit hooks (backport `#252 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/252>`_) (`#253 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/253>`_)
+* Add missing gpio interfaces for force_mode and freedrive_mode (`#251 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/251>`_)
+* Auto-update pre-commit hooks (`#250 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/250>`_)
+* Contributors: Felix Exner
+
+2.1.10 (2025-01-23)
+-------------------
+* Fix ur20 upperarm texture (backport `#244 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/244>`_) (`#246 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/246>`_)
+* Removing Blender Lighting and Camera information from visual DAE files (backport `#243 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/243>`_) (`#245 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/245>`_)
+* Auto-update pre-commit hooks (backport of `#241 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/241>`_)
+* Update package maintainers (backport of `#238 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/238>`_)
+* Remove Iron workflows and from README (backport of `#230 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/230>`_)
+* Contributors: Felix Exner, Shaurya Kumar
+
+2.1.9 (2024-12-04)
+------------------
+* Assure the description is loaded as string (backport `#229 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/229>`_)
+* Added ground plane to URDF for simulators (`#226 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/226>`_)
+* Contributors: Vincenzo Di Pentima, Felix Exner
+
+2.1.8 (2024-10-28)
+------------------
+* Add analog_output_domain_cmd command interface (baclport of `#219 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/219>`_)
+* Add a sensor for the TCP pose (backport of `#197 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/197>`_)
+* Add missing state interfaces for get_version service (backport of `#216 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/216>`_)
+* Ur3 infinite wrist (backport of `#196 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/196>`_)
+* Update dynamic properties (backport of `#195 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/195>`_)
+* Contributors: mergify[bot], Felix Exner, Rune Søe-Knudsen
+
 2.1.7 (2024-09-10)
 ------------------
 * Fix masses of robot links (backport of `#187 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/187>`_)
@@ -135,7 +184,7 @@ Changelog for package ur_description
   Joint limits for the limited version could be set using arguments for the UR10
   but not for the UR3 and UR5. Same lower and upper limit arguments are added to
   the UR3 and UR5 xacro macros.
-* Fix elbow joint limits (`#268 <https://github.com//ros-industrial/universal_robot/issues/268>`_)
+* Fix elbow joint limits (`ros1#268 <https://github.com//ros-industrial/universal_robot/issues/268>`_)
 * Remove warning 'redefining global property: pi' (Jade+) (`#315 <https://github.com//ros-industrial/universal_robot/issues/315>`_)
 * Contributors: Beatriz Leon, Dave Coleman, Felix Messmer, Miguel Prada
 
@@ -155,7 +204,7 @@ Changelog for package ur_description
 
 1.1.7 (2016-12-29)
 ------------------
-* Fix xacro warnings in Jade (`#251 <https://github.com/ros-industrial/universal_robot/issues/251>`_)
+* Fix xacro warnings in Jade (`ros1#251 <https://github.com/ros-industrial/universal_robot/issues/251>`_)
 * added default values to xacro macro
 * tested joint limits modification
 * Contributors: Dave Coleman, G.A. vd. Hoorn, philip 14.04

@@ -36,26 +36,27 @@ repos:
         # This need to be a one to one copy from the Universal Robots legal no matter trailing spaces or not
         exclude: |
           (?x)^(
+            meshes/ur15/LICENSE.txt|
             meshes/ur20/LICENSE.txt|
             meshes/ur30/LICENSE.txt
           )$
 
   # Python hooks
   - repo: https://github.com/asottile/pyupgrade
-    rev: v3.16.0
+    rev: v3.20.0
     hooks:
       - id: pyupgrade
         args: [--py36-plus]
 
   - repo: https://github.com/psf/black
-    rev: 24.4.2
+    rev: 25.1.0
     hooks:
       - id: black
         args: ["--line-length=100"]
 
 
   - repo: https://github.com/pycqa/flake8
-    rev: 7.1.0
+    rev: 7.2.0
     hooks:
       - id: flake8
         args: ["--ignore=E501"]
@@ -107,7 +108,7 @@ repos:
   # Spellcheck in comments and docs
   # skipping of *.svg files is not working...
   - repo: https://github.com/codespell-project/codespell
-    rev: v2.3.0
+    rev: v2.4.1
     hooks:
       - id: codespell
         args: ['--write-changes']
